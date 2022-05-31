@@ -17,13 +17,17 @@ li {
   gap: 10px;
 
 }
-img {
+.gallery li img {
   width: 300px;
   height: 400px;
   cursor: pointer;
   /* object-fit: cover;
   object-position: center center; */
   vertical-align: top;
+  transition: all 0.5s ease;
+}
+.gallery li {
+  overflow: hidden;
 }
 #lightbox-overlay {
   position: fixed;
@@ -39,6 +43,7 @@ img {
 }
 .gallery li img:hover {
   opacity: 0.75;
+  transform: scale(1.1);
 }
 #lightbox-overlay.visible {
   opacity: 1;
@@ -52,6 +57,10 @@ img {
   transform: translate(-50%, -50%);
   width: 500px;
   height: 700px;
-  border: 2px solid white;
-  
+  border: 2px solid #ddd;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 8px;
+  /* background: transparent url('') 50% 50% no-repeat; */
+  text-indent: -99999px;
 }
+
+

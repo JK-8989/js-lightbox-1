@@ -24,8 +24,6 @@ function lightbox(e){
           })
 
         };
-
-        
       
       }
 
